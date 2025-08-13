@@ -2,7 +2,7 @@
 
 Simple hotel booking website with content management system. Users can book rooms for specific dates. Admin can create, update, and delete room details. Admin can manage everything in the app.
 
-![Login Page](Radissonblu\images\01.png)
+![Login Page](images\01.png)
 This is the login page of my website.
 
 ![Welcome image](Radissonblu\images\02.png)
