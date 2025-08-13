@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Cookie&family=Poppins:wght@600&display=swap');
+
+:root {
+  --bg-text-shadow: 0 2px 4px rgb(13 0 77 / 8%), 0 3px 6px rgb(13 0 77 / 8%), 0 8px 16px rgb(13 0 77 / 8%);
+  --bg-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.621);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+*::-webkit-scrollbar {
+  width: 0.4rem;
+}
+*::-webkit-scrollbar-track {
+  background: rgb(6, 6, 44);
+}
+*::-webkit-scrollbar-thumb {
+  background: #0040ff;
+}
+
+/* NAVBAR FIX */
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img.bluebirdlogo {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.logo p {
+  font-size: 28px;
+  font-weight: bold;
+  color: rgb(66, 68, 74);
+  text-shadow: var(--bg-text-shadow);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #0d6efd;
+}
+
+nav ul li {
+  position: relative;
+}
+
+.logoutbtn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logoutbtn:hover {
+  background-color: #c82333;
+}
+
+/* MAIN SECTIONS */
+
+#firstsection {
+  height: 100vh;
+  background-color: rgba(175, 175, 222, 0.511);
+  width: 100%;
+}
+
+#firstsection .carousel-inner {
+  width: 100%;
+  height: 100vh;
+}
+#firstsection .carousel-inner::after {
+  content: "";
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(178, 170, 236, 0.533);
+}
+#firstsection .carousel-item {
+  overflow: hidden;
+}
+#firstsection .carousel-item img {
+  width: 100%;
+  height: 100vh;
+}
+
+#firstsection .welcomeline {
+  position: absolute;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+#firstsection .welcometag {
+  font-size: 110px;
+  font-weight: bold;
+  font-family: 'Cookie', cursive;
+  letter-spacing: 2px;
+  line-height: 100px;
+  padding: 5px;
+  background: -webkit-linear-gradient(317deg, rgba(0, 60, 255, 0.81) 0%, rgb(255 0 123) 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#secondsection {
+  height: 100vh;
+}
+#secondsection img {
+  height: 100vh;
+  width: 100%;
+  filter: blur(20px);
+  position: absolute;
+  z-index: -2;
+}
+
+.ourroom {
+  position: relative;
+  top: 90px;
+  height: 400px;
+  width: 100%;
+}
+
+.head {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.roomselect {
+  display: flex;
+  height: 100%;
+  justify-content: space-evenly;
+}
+
+.roomselect .roombox {
+  height: 100%;
+  width: 300px;
+  background-color: rgb(8, 8, 48);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.hotelphoto {
+  height: 250px;
+  width: 100%;
+  background-color: aquamarine;
+  background-size: cover;
+}
+
+.h1 {
+  background-image: url(../image/hotel1photo.webp);
+}
+.h2 {
+  background-image: url(../image/hotel2photo.jpg);
+}
+.h3 {
+  background-image: url(../image/hotel3photo.avif);
+}
+.h4 {
+  background-image: url(../image/hotel4photo.jpg);
+}
+
+.roomdata {
+  text-align: center;
+}
+
+.roomdata h2 {
+  color: rgb(207, 211, 255);
+  font-size: 30px;
+}
+
+.sevices {
+  display: flex;
+}
+.services i {
+  color: white;
+  margin: 7px;
+}
+
+.bookbtn {
+  margin: 10px;
+}
+
+#guestdetailpanel {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.558);
+  position: fixed;
+  z-index: 10000;
+}
+
+#thirdsection {
+  height: 80vh;
+  width: 100%;
+}
+
+.facility {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.facility .box {
+  height: 100%;
+  width: 310px;
+  border: 2px solid white;
+  background-color: #0040ff;
+  background-size: cover;
+}
+
+.facility .box h2 {
+  text-align: center;
+  position: relative;
+  top: 80%;
+  color: white;
+  background-color: #0000005e;
+}
+
+.box:nth-child(1) {
+  background-image: url(../image/swimingpool.jpg);
+}
+.box:nth-child(2) {
+  background-image: url(../image/spa.jpg);
+}
+.box:nth-child(3) {
+  background-image: url(../image/food.jpg);
+}
+.box:nth-child(4) {
+  background-image: url(../image/gym.jpg);
+}
+.box:nth-child(5) {
+  background-image: url(../image/heli.jpg);
+}
+
+#contactus {
+  height: 70px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+}
+#contactus .social {
+  width: 200px;
+  display: flex;
+  justify-content: space-evenly;
+}
+#contactus i {
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+}
+#contactus .createdby {
+  color: white;
+}
+
+/* Responsive */
+
+@media(max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+    height: auto;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  #firstsection,
+  #firstsection .carousel-inner,
+  #firstsection .carousel-inner::after,
+  #firstsection .carousel-item img,
+  #firstsection .welcomeline {
+    height: 50vh;
+  }
+
+  #firstsection .welcometag {
+    text-align: center;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  #secondsection {
+    height: auto;
+  }
+
+  .roomselect {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .roomselect .roombox {
+    width: 75%;
+  }
+
+  .facility {
+    flex-wrap: wrap;
+  }
+
+  .facility .box {
+    margin: 10px 0;
+    width: 45%;
+  }
+
+  .box:nth-child(5) {
+    display: none;
+  }
+
+  #contactus {
+    padding: 0 30px;
+  }
+}
