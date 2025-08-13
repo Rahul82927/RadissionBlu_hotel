@@ -14,6 +14,9 @@ This is the picture showing our different cateogory of rooms.
 ![Our Facilities](https://github.com/Rahul82927/RadissionBlu_hotel/blob/master/images/04.png)
 This is the picture showing our facilities.
 
+![Bed rooms](https://github.com/Rahul82927/RadissionBlu_hotel/blob/master/images/bedroomstatus.png)
+This is the image of our bedroom. 
+
 
 
 ## Tech Stack 
