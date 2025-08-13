@@ -5,13 +5,13 @@ Simple hotel booking website with content management system. Users can book room
 ![Login Page](https://github.com/Rahul82927/RadissionBlu_hotel/blob/master/images/01.png)
 This is the login page of my website.
 
-![Welcome image](Radissonblu\images\02.png)
+![Welcome image](https://github.com/Rahul82927/RadissionBlu_hotel/blob/master/images/02.png)
 This is the welcome page of my website.
 
-![Our Rooms](Radissonblu\images\03.png)
+![Our Rooms](https://github.com/Rahul82927/RadissionBlu_hotel/blob/master/images/03.png)
 This is the picture showing our different cateogory of rooms. 
 
-![Our Facilities](Radissonblu\images\04.png)
+![Our Facilities](https://github.com/Rahul82927/RadissionBlu_hotel/blob/master/images/04.png)
 This is the picture showing our facilities.
 
 
